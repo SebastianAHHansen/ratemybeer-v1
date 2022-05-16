@@ -14,8 +14,8 @@ const RateMyBeer = () => {
     const ClearInput = () => {
         document.getElementById("beer").value = "";
         document.getElementById("category").value = "Lager";
-        document.getElementById("rating").value = "";
-        document.getElementById("price").value = "";
+        document.getElementById("rating").value = "Rating";
+        document.getElementById("price").value = "Price";
         document.getElementById("comment").value = "";
     }
 
@@ -33,12 +33,13 @@ const RateMyBeer = () => {
             <header className="App-header">
                 <h1>Rate My Beer <FaBeer/></h1>
                 <Link to={'/beergarden'} className="btn">Beergarden</Link>
-
                 {/* Input Fields */}
+                {/* What Beer? */}
                 <h3 className="h3-header"><FaBeer/> Beer *</h3>
                 <input type="text" id="beer" placeholder="What Beer did you have? *"/>
-                <h3 className="h3-header"><BiCategory/> Category *</h3>
 
+                {/* Category */}
+                <h3 className="h3-header"><BiCategory/> Category</h3>
                 {/* Select Category - dropdown options */}
                 <div className="selectCategory">
                 <select id="category" required>
@@ -55,11 +56,50 @@ const RateMyBeer = () => {
                 </select>
                 </div>
 
-                {/* Input Fields */}
-                <h3 className="h3-header"><AiFillStar/> Rating *</h3>
-                <input type="number" id="rating" min="1" max="10" pattern="[1-5]" step="0.5" placeholder="Rate the Beer 1-10 *"required/>
+                {/* Rating */}
+                <h3 className="h3-header"><AiFillStar/> Rating</h3>
+                {/* <input type="number" id="rating" min="1" max="10" pattern="[1-5]" step="0.5" required/> */}
+
+                {/* Select Rating - dropdown options */}
+                <div className="selectRating">
+                <select id="rating" required>
+                <option value="Rating">5</option>
+                <option value="Rating">1</option>
+                <option value="Rating">1.5</option>
+                <option value="Rating">2</option>
+                <option value="Rating">2.5</option>
+                <option value="Rating">3</option>
+                <option value="Rating">3.5</option>
+                <option value="Rating">4</option>
+                <option value="Rating">4.5</option>
+                <option value="Rating">5</option>
+                <option value="Rating">5.5</option>
+                <option value="Rating">6</option>
+                <option value="Rating">6.5</option>
+                <option value="Rating">7</option>
+                <option value="Rating">7.5</option>
+                <option value="Rating">8</option>
+                <option value="Rating">8.5</option>
+                <option value="Rating">9</option>
+                <option value="Rating">9.5</option>
+                <option value="Rating">10</option>
+                </select>
+                </div>
                 <h3 className="h3-header"><FaRegMoneyBillAlt/> Price</h3>
-                <input type="text" id="price" min="1" max="100" placeholder="How much did you pay for it?"/>
+                {/* <input type="text" id="price" min="1" max="100" placeholder="How much did you pay for it?"/> */}
+
+                {/* Price */}
+                {/* Select Price - dropdown options */}
+                <div className="selectPrice">
+                <select id="price" required>
+                <option value="Price">Between 15SEK & 30SEK </option>
+                <option value="Price">Less Than 15SEK </option>
+                <option value="Price">More Than 30SEK</option>
+                <option value="Price">Don't know</option>
+                </select>
+                </div>
+
+                {/* Other Comments */}
                 <h3 className="h3-header"><BiCommentDetail/> Other Comments</h3>
                 <input type="text" id="comment" placeholder="Other Comments about the Beer"/>
 
@@ -73,6 +113,3 @@ const RateMyBeer = () => {
 }
 
 export default RateMyBeer
-
-// Error Message
-{/* <div className="error-msg" id="error-msg"></div> */}

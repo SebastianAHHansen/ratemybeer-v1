@@ -58,7 +58,6 @@ const RateMyBeer = () => {
 
                 {/* Rating */}
                 <h3 className="h3-header"><AiFillStar/> Rating</h3>
-                {/* <input type="number" id="rating" min="1" max="10" pattern="[1-5]" step="0.5" required/> */}
 
                 {/* Select Rating - dropdown options */}
                 <div className="selectRating">
@@ -86,7 +85,6 @@ const RateMyBeer = () => {
                 </select>
                 </div>
                 <h3 className="h3-header"><FaRegMoneyBillAlt/> Price</h3>
-                {/* <input type="text" id="price" min="1" max="100" placeholder="How much did you pay for it?"/> */}
 
                 {/* Price */}
                 {/* Select Price - dropdown options */}

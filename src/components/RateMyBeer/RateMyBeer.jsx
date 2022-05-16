@@ -39,8 +39,8 @@ const RateMyBeer = () => {
                 <input type="text" id="beer" placeholder="What Beer did you have? *"/>
 
                 {/* Category */}
-                <h3 className="h3-header"><BiCategory/> Category</h3>
                 {/* Select Category - dropdown options */}
+                <h3 className="h3-header"><BiCategory/> Category</h3>
                 <div className="selectCategory">
                 <select id="category" required>
                 <option value="Lager">Lager</option>
@@ -57,9 +57,8 @@ const RateMyBeer = () => {
                 </div>
 
                 {/* Rating */}
-                <h3 className="h3-header"><AiFillStar/> Rating</h3>
-
                 {/* Select Rating - dropdown options */}
+                <h3 className="h3-header"><AiFillStar/> Rating</h3>
                 <div className="selectRating">
                 <select id="rating" required>
                 <option value="Rating">5</option>
@@ -84,10 +83,10 @@ const RateMyBeer = () => {
                 <option value="Rating">10</option>
                 </select>
                 </div>
-                <h3 className="h3-header"><FaRegMoneyBillAlt/> Price</h3>
 
                 {/* Price */}
                 {/* Select Price - dropdown options */}
+                <h3 className="h3-header"><FaRegMoneyBillAlt/> Price</h3>
                 <div className="selectPrice">
                 <select id="price" required>
                 <option value="Price">Between 15SEK & 30SEK </option>

@@ -30,9 +30,11 @@ const RateMyBeer = () => {
 
     return (
         <div className="App">
-            <header className="App-header">
                 <h1>Rate My Beer <FaBeer/></h1>
                 <Link to={'/beergarden'} className="btn">Beergarden</Link>
+                <Link to={'/About'} className="btn">About & Contact</Link>
+            <header className="App-header">
+            <h1>Rate My Beer <FaBeer/></h1>
                 {/* Input Fields */}
                 {/* What Beer? */}
                 <h3 className="h3-header"><FaBeer/> Beer *</h3>
@@ -50,8 +52,6 @@ const RateMyBeer = () => {
                 <option value="Lager">Stout</option>
                 <option value="Lager">Weissbier</option>
                 <option value="Lager">Sour beer</option>
-                <option value="Lager">Kloster</option>
-                <option value="Lager">Snusk</option>
                 <option value="Lager">Other</option>
                 </select>
                 </div>
@@ -99,11 +99,12 @@ const RateMyBeer = () => {
                 {/* Other Comments */}
                 <h3 className="h3-header"><BiCommentDetail/> Other Comments</h3>
                 <input type="text" id="comment" placeholder="Other Comments about the Beer"/>
+                <button className="btn" onClick={SaveBeers}> <FaBeer/> Cheers! </button>
 
-                {/* Buttons with execution */}
-                <button className="btn btn-primary" onClick={SaveBeers}> <FaBeer/> Cheers! </button>
-                <button className="btn btn-primary" onClick={ClearInput}>Clear Input Forms</button>
             </header>
+                {/* Buttons with execution */}
+                <button className="btn" onClick={ClearInput}>Save More Beers</button>
+                <Link to={'/beergarden'} className="btn">Beergarden</Link>
             <Footer/>
         </div>
     )

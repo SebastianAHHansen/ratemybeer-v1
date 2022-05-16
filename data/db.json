@@ -4,7 +4,7 @@
             "type": "Heineken",
             "category": "Lager",
             "rating": 5,
-            "id": 1,
+            "id": 1
         },
         {
             "type": "Poppels Passion",
@@ -20,7 +20,7 @@
         },
         {
             "type": "Dugges Tropic Thunder",
-            "category": "Sour beer",
+            "category": "Sour Beer",
             "rating": 9,
             "id": 4
         }

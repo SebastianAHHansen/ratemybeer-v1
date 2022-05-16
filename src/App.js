@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import ReactDOM from "react-dom/client";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Beergarden from './components/Beergarden/Beergarden';
+import RateMyBeer from './components/RateMyBeer/RateMyBeer';
+import ErrorPage from './components/ErrorPage/ErrorPage';
+import About from './components/About/About';
+
+const App = () => {
+    return (
+        <BrowserRouter>
+            <Routes>
+            <Route path="/" element={<RateMyBeer />} />
+            <Route path="beergarden" element={<Beergarden />} />
+            <Route path="about" element={<About />} />
+            <Route path="/*" element={<ErrorPage />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;

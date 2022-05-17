@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom";
+import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 
 // Icons
@@ -9,10 +10,9 @@ import { FaBeer } from 'react-icons/fa';
 const About = () => {
     return (
         <div className="App">
-                <h1>About Rate My Beer <FaBeer/></h1>
-                <Link to={'/'} className="btn">Rate My Beer</Link>
-                <Link to={'/beergarden'} className="btn">Beergarden</Link>
+            <Navbar/>
             <header className="App-header">
+            <h1>About & Contact</h1>
                 <div className="content">
                     <h3>Story Behind</h3>
                     <p>I'm Sebastian, the creator of Rate My Beer. I've always wanted a simple app to be able to save the beer I've been drinking. <br/><br/> In step with studies in Front End Development, Rate My Beer became reality. Enjoy!</p>

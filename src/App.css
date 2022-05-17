@@ -23,40 +23,19 @@
 .h3-header {
   margin: 15px;
 }
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
-.footer-links li a {
-  text-decoration: none;
-  color: white;
-  transition: 300ms ease;
-}
-
-.footer-links li a:hover {
-  color: goldenrod;
-  transition: 300ms ease;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  transition: 300ms ease;
-}
-
-a:hover {
-  color: goldenrod;
-  transition: 300ms ease;
+hr {
+  width: 80%;
 }
 
 .content {
   width: 450px;
   border-radius: 15px;
   padding: 15px;
+}
+
+select {
+  font-size: larger;
 }
 
 /* Input Fields - Styling */

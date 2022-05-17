@@ -1,6 +1,9 @@
 import React from 'react'
 import {Link} from "react-router-dom";
+import './Footer.css'
 
+// Icons
+import { FaBeer } from 'react-icons/fa';
 import { BsFacebook } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
 import { BsGithub } from 'react-icons/bs';
@@ -9,7 +12,8 @@ import { BsMessenger } from 'react-icons/bs';
 const Footer = () => {
     return (
         <div className="footer">
-            <h2>Rate My Beer</h2>
+            <hr/>
+            <h2>Rate My Beer <FaBeer/></h2>
             <ul className="footer-links">
                 <li><Link to={'/'}>Rate My Beer</Link></li>
                 <li><Link to={'/Beergarden'}>Beergarden</Link></li>

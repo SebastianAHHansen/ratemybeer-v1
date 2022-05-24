@@ -1,3 +1,7 @@
+/**
+* Rate My Beer, Homepage
+*/
+
 import React from 'react'
 import {Link} from "react-router-dom";
 import Navbar from '../Navbar/Navbar';
@@ -11,7 +15,7 @@ import { FaRegMoneyBillAlt } from 'react-icons/fa';
 import { BiCommentDetail } from 'react-icons/bi';
 
 const RateMyBeer = () => {
-    // Save Data in Input Fields
+    // Save Data from Input Fields to Database
     function SaveBeers() {
 
         // Validation Input Field
@@ -124,7 +128,6 @@ const RateMyBeer = () => {
                 {/* Other Comments */}
                 <h3 className="h3-header"><BiCommentDetail/> Other Comments</h3>
                 <input type="text" id="comment" placeholder="Other Comments about the Beer"/>
-
                 <br/>
                 <button id="submit" className="btn" onClick={SaveBeers}> <FaBeer/> Cheers! </button>
                 </form>

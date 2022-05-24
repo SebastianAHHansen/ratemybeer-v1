@@ -1,3 +1,7 @@
+/**
+ * Error Page
+ */
+
 import React from 'react'
 import {Link} from "react-router-dom";
 import { FaBeer } from 'react-icons/fa';

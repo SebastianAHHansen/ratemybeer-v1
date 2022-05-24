@@ -7,10 +7,6 @@ import {Link} from "react-router-dom";
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 
-// Icons
-import { FaBeer } from 'react-icons/fa';
-
-
 const About = () => {
     return (
         <div className="App">
@@ -23,7 +19,7 @@ const About = () => {
                     <h3>Contact</h3>
                     <p>Feel free to hit me up with your thoughts and/or ideas what Rate My Beer lacks, or how you use the Rate My Beer app.</p>
                     <p>Cheers, <br/> Sebastian </p>
-                    <a href="#">ratemybeer@gmail.com</a>
+                    <a href="mailto: ratemybeer@gmail.com">ratemybeer@gmail.com</a>
                 </div>
             </header>
                 <Link to={'/'} className="btn">Rate My Beer</Link>

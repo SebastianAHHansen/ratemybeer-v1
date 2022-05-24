@@ -41,8 +41,9 @@ const RateMyBeer = () => {
                 e.preventDefault()
                 errorElement.innerText = messages.join(', ')
             }
-            console.log('Great Success!')
+            alert('Great Success!');
         })
+        ClearInput();
     } 
 
     // Clear Input Fields
@@ -129,11 +130,12 @@ const RateMyBeer = () => {
                 <h3 className="h3-header"><BiCommentDetail/> Other Comments</h3>
                 <input type="text" id="comment" placeholder="Other Comments about the Beer"/>
                 <br/>
-                <button id="submit" className="btn" onClick={SaveBeers}> <FaBeer/> Cheers! </button>
+                <button id="submit" className="btn" onClick={SaveBeers}> <FaBeer/> Cheers! Save another beer!</button>
+                <br/><br/>
                 </form>
             </header>
                 {/* Buttons with execution */}
-                <button className="btn" onClick={ClearInput}>Save More Beers</button>
+                {/* <button className="btn" onClick={ClearInput}>Save More Beers</button> */}
                 <Link to={'/beergarden'} className="btn">Beergarden</Link>
             <Footer/>
         </div>

@@ -28,12 +28,12 @@ const Footer = () => {
                 </li>
             </ul>
             <ul className="footer-links"> Contact
-                <li><a href="https://messenger.com" target="_blank"><BsMessenger/> Contact Us</a></li>
+                <li><a href="https://messenger.com" target="_blank" rel="noreferrer"><BsMessenger/> Contact Us</a></li>
             </ul>
             <ul className="footer-links">Social Media
-                <li><a href="https://facebook.com" target="_blank"><BsFacebook/> Facebook</a></li>
-                <li><a href="https://instagram.com" target="_blank"> <BsInstagram/> Instagram</a></li>
-                <li><a href="https://github.com" target="_blank"><BsGithub/> GitHub</a></li>
+                <li><a href="https://facebook.com" target="_blank" rel="noreferrer"><BsFacebook/> Facebook</a></li>
+                <li><a href="https://instagram.com" target="_blank" rel="noreferrer"> <BsInstagram/> Instagram</a></li>
+                <li><a href="https://github.com" target="_blank" rel="noreferrer"><BsGithub/> GitHub</a></li>
             </ul>
             <p>Created by RateMyBeer 2022</p>
         </div>

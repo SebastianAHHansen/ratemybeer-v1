@@ -38,8 +38,15 @@ const Beergarden = () => {
                             <option value="Lager">Other BEERS</option>
                         </select>
                     </div>
+
+                    {/* Search for Beers in database */}
+                    <h3 className="h3-header"><MdOutlineManageSearch/> Search Beers</h3>
+                    <input type="text" id="search-beer" placeholder=" Search for Beer, Category, Rating" required/>
+                    {/* <button type="submit" className="btn btn-primary"> <FaBeer/> Search Beers</button> */}
+
                     <br/>
 
+                    <br/>
                     {/* List All Beers */}
                     <div className="beer-list">
                     { error && <div>{ error }</div> }
@@ -47,11 +54,6 @@ const Beergarden = () => {
                     { beers && <BeerList beers={beers} title="All Your Saved Beers"/> }
                     </div>
 
-                    <br/>
-                    {/* Search for Beers in database */}
-                    <h3 className="h3-header"><MdOutlineManageSearch/> Search Beers</h3>
-                    <input type="text" id="search-beer" placeholder=" Search for Beer, Category, Rating" required/>
-                    {/* <button type="submit" className="btn btn-primary"> <FaBeer/> Search Beers</button> */}
             </header>   
                     <Link to={'/'} className="btn">Rate Another Beer</Link>
             <Footer/>

@@ -38,6 +38,10 @@ select {
   font-size: larger;
 }
 
+.beer-list {
+  margin-top: 30px;
+}
+
 /* Input Fields - Styling */
 #beer,
 #price,

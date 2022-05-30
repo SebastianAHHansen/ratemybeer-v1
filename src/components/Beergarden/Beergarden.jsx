@@ -1,7 +1,3 @@
-/**
- * Beergarden Page
- */
-
 import React from 'react'
 import {Link} from "react-router-dom";
 import Navbar from '../Navbar/Navbar';
@@ -15,7 +11,7 @@ import { MdOutlineManageSearch } from 'react-icons/md';
 import { IoMdList } from 'react-icons/io';
 
 const Beergarden = () => {
-    const { data: beers, isPending, error } = useFetch('http://localhost:8000');
+    const { data: beers, isPending, error } = useFetch('http://localhost:3001/beers');
     return (
         <div className="App">
             <Navbar/>
@@ -44,9 +40,6 @@ const Beergarden = () => {
                     <input type="text" id="search-beer" placeholder=" Search for Beer, Category, Rating" required/>
                     {/* <button type="submit" className="btn btn-primary"> <FaBeer/> Search Beers</button> */}
 
-                    <br/>
-
-                    <br/>
                     {/* List All Beers */}
                     <div className="beer-list">
                     { error && <div>{ error }</div> }
@@ -63,20 +56,3 @@ const Beergarden = () => {
 
 
 export default Beergarden
-
-// let jsonFile = require("./data.json");
-
-// const {default: fetch } = require("cross-fetch");
-// async function getBeersData() {
-//     //Get Data from JSON file
-//     let response = await fetch("http://127.0.0.1:5500/data.json");
-//     response =  await response.json();
-
-//     //Return the JS object
-//     return response;
-// }
-
-// async function btnBeersData() {
-//     let data = await getBeersData();
-//     document.getElementById("output").innerHTML = `<div>${data.type}</div><div>${data.category}</div><div>${data.rating}</div>`
-// }

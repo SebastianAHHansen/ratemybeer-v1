@@ -1,7 +1,7 @@
 {
     "beers": [
         {
-            "type": "Heineken",
+            "type": "Norrlands Guld",
             "category": "Lager",
             "rating": 5,
             "id": 1
@@ -23,6 +23,12 @@
             "category": "Sour Beer",
             "rating": 9,
             "id": 4
+        },
+        {
+            "type": "Corona Cero",
+            "category": "Lager",
+            "rating": 8,
+            "id": 5
         }
     ]
 }

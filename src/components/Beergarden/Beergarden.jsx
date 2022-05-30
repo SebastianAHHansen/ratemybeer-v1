@@ -17,13 +17,15 @@ const Beergarden = () => {
             <Navbar/>
             <header className="App-header">
                     <h1>Beergarden <FaBeer/></h1>
-                    {/* List all Beers in database */}
-                    <h3><IoMdList/> List your saved Beers</h3>
-                    <button className="btn"> <IoMdList/> List all of your saved Beers</button>
+
+                    {/* Search for Beers in database */}
+                    <h3 className="h3-header"><MdOutlineManageSearch/> Search Beers</h3>
+                    <input type="text" id="search-beer" placeholder=" Search for Beer, Category, Rating" required/>
+                    {/* <button type="submit" className="btn btn-primary"> <FaBeer/> Search Beers</button> */}
 
                     {/* List Beer by Category */}
                     <div className="selectCategory">
-                        <h5>Or List By Category</h5>
+                        <h5>Or list By Category</h5>
                         <select id="category" required>
                             <option value="Lager">Lager BEERS</option>
                             <option value="Lager">Ale BEERS</option>
@@ -34,12 +36,7 @@ const Beergarden = () => {
                             <option value="Lager">Other BEERS</option>
                         </select>
                     </div>
-
-                    {/* Search for Beers in database */}
-                    <h3 className="h3-header"><MdOutlineManageSearch/> Search Beers</h3>
-                    <input type="text" id="search-beer" placeholder=" Search for Beer, Category, Rating" required/>
-                    {/* <button type="submit" className="btn btn-primary"> <FaBeer/> Search Beers</button> */}
-
+                    
                     {/* List All Beers */}
                     <div className="beer-list">
                     { error && <div>{ error }</div> }
